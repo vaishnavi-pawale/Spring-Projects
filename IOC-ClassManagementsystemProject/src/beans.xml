@@ -2,30 +2,38 @@
 
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
 			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
-			
-			<beans>
-			<bean id="c" class="com.Entity.Course">
-			<property name="cid" value="5464"></property>
-			<property name="cname" value="COMP"></property>
-			</bean>
-			
-			<bean id="f" class="com.Entity.Faculty">
-			<property name="fid" value="3478"></property>
-			<property name="fname" value="varsha"></property>
-			<property name="course"  ref="c"></property>
-			</bean>
-			
-			<bean id="b" class="com.Entity.Batch">
-			<property name="bid" value="1023"></property>
-			<property name="bname" value="batch-50"></property>
-			<property name="faculty"  ref="f"></property>
-			</bean>
-			
-			<bean id="stu" class="com.Entity.Student">
-			<property name="sid" value="102"></property>
-			<property name="sname" value="vaishanvi"></property>
-			<property name="batch" ref= "b"></property>
-			</bean>
-			
-			</beans>
+
+
+<!-- singleton (Default): A single instance of the bean is created and shared 
+	across the application. 
+	Example: <bean id="myBean" class="com.example.MyClass" scope="singleton"/> -->
+
+<!-- prototype: A new instance is created every time the bean is requested. 
+	Example: <bean id="myBean" class="com.example.MyClass" scope="prototype"/> -->
+
+<beans>
+	<bean id="c" class="com.Entity.Course" scope="singleton">
+		<property name="cid" value="5464"></property>
+		<property name="cname" value="COMP"></property>
+	</bean>
+
+	<bean id="f" class="com.Entity.Faculty" scope="prototype">
+		<property name="fid" value="3478"></property>
+		<property name="fname" value="varsha"></property>
+		<property name="course" ref="c"></property>
+	</bean>
+
+	<bean id="b" class="com.Entity.Batch">
+		<property name="bid" value="1023"></property>
+		<property name="bname" value="batch-50"></property>
+		<property name="faculty" ref="f"></property>
+	</bean>
+
+	<bean id="stu" class="com.Entity.Student">
+		<property name="sid" value="102"></property>
+		<property name="sname" value="vaishanvi"></property>
+		<property name="batch" ref="b"></property>
+	</bean>
+
+</beans>
 

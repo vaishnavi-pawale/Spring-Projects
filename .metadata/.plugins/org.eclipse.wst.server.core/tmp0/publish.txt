@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Sat Dec 07 17:33:26 IST 2024
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Vaishnavi\ pawale\\OneDrive\\Desktop\\SpringProjects\\MVC-4\\WebContent\\WEB-INF\\lib\\spring-web-5.2.8.RELEASE.jar=WEB-INF/lib/spring-web-5.2.8.RELEASE.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Vaishnavi\ pawale\\OneDrive\\Desktop\\SpringProjects\\MVC-4\\WebContent\\WEB-INF\\lib\\spring-web-5.2.8.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.2.8.RELEASE-sources.jar
