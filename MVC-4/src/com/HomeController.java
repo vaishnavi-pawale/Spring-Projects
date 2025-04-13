@@ -18,7 +18,7 @@ public class HomeController {
 	@Autowired
 	private ClassService clss;
 
-//	private final static String username = "vaishnavi";
+	private final static String username = "vaishnavi";
 	private final static String PASSWORD = "123vaish";
 
 	@RequestMapping(value = "/log")
